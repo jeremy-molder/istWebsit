@@ -30,9 +30,6 @@ $(document).ready(function(){
             $('#grad').append('<h4>'+item.title+'</h4>'+'<p>'+item.concentration+'</p>');
         });
     });
-    myXhr('get', {path:'/minors/'}, '#grad').done(function(json){
-
-    }
     myXhr('get',{path:'/people/'},'#people').done(function(json){
         // do something...
         var x='';
